@@ -35,9 +35,6 @@ class SomeOtherViewController: UIViewController {
         } catch {
             NSLog("we errored out")
         }
-
-//        imageView.set
-        // Do any additional setup after loading the view.
     }
     
     
@@ -48,7 +45,6 @@ class SomeOtherViewController: UIViewController {
     }
     
     @IBAction func addPhotoClicked() {
-//        NSLog(Singletons.getEncodedImage().addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)
         var encode = Singletons.getEncodedImage() //.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         NSLog(encode)
         Singletons.addLocalImages(item: (encode), tag: hashtagTextField.text!)
@@ -69,14 +65,10 @@ class SomeOtherViewController: UIViewController {
         if error != nil {
             NSLog(error!.localizedDescription)
         }
-//            NSLog(response.)
         guard data != nil else { return }
         NSLog("executing call")
-//            NSLog(urlString)
         }.resume()
-//        URLencode
         Singletons.loadCloset()
-//        Singletons.getCloset()
     }
 
     /*
