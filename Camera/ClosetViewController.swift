@@ -28,11 +28,9 @@ class ClosetViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let array = Singletons.getLocalImages()
-        var list = Array<String>()
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
-//        for text in array {
-//            list.append(text)
-//        }
+
         cell.imageTextLabel!.text = Singletons.getLocalImages()[indexPath.row].1
         
         let dataDecoded : Data = Data(base64Encoded: Singletons.getLocalImages()[indexPath.row].0, options: .ignoreUnknownCharacters)!
@@ -40,7 +38,7 @@ class ClosetViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let image = UIImage(data: dataDecoded)
         
         cell.pictureView.image = image
-//        cell.si
+
         return cell
     }
     

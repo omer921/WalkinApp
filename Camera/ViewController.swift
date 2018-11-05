@@ -133,76 +133,16 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
             return
         }
         
-        // Initialise an UIImage with our image data
-//        imageData = imageData.resizeWithWidth(200)!
         let capturedImage = UIImage.init(data: imageData , scale: 0.1)
         if let image = capturedImage {
-            // Save our captured image to photos album
-//            let utf8str = str.dataUsingEncoding(NSUTF8StringEncoding)
             var data = image.jpegData(compressionQuality: 0)
             Singletons.setEncodedImage(encodedStrings: (data?.base64EncodedString() ?? nil)!)
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "SomeOtherViewController")
             self.present(controller, animated: true, completion: nil)
-//            capturedImage.en
-//            var thing = capturedImage?.encode(with: NSCoder.init())
-//            NSLog(thing)
-//            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         }
     }
-    
-    
-    
-    
-//    func photoOutput(_ captureOutput: AVCapturePhotoOutput,
-//                     didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer??,
-//                 previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?,
-//                 resolvedSettings: AVCaptureResolvedPhotoSettings,
-//                 bracketSettings: AVCaptureBracketedStillImageSettings?,
-//                 error: Error?) {
-//        guard let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer as! CMSampleBuffer, previewPhotoSampleBuffer: previewPhotoSampleBuffer) else {
-//            return
-//        }
-////        let imageData = photoSampleBuffer.fileDataRepresentation()
-//        // Make sure we get some photo sample buffer
-////        guard error == nil,
-////            let photoSampleBuffer = photoSampleBuffer else {
-////            print("Error capturing photo: \(String(describing: error))")
-////            return
-////        }
-////        var data photo
-////        AVCapturePhotoOutput.dngPhotoDataRepresentation(forRawSampleBuffer: <#T##CMSampleBuffer#>, previewPhotoSampleBuffer: <#T##CMSampleBuffer?#>)
-////        photoSampleBuffer
-//        // Convert photo same buffer to a jpeg image data by using AVCapturePhotoOutput
-////        AVCapturePhotoOutput
-////        photoSampleBuffer.
-//
-////        AVCapturePhotoOutput.
-//
-////        guard let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer, previewPhotoSampleBuffer: previewPhotoSampleBuffer) else {
-////
-////            return
-////        }
-//        NSLog("this is the encoded string %s", (imageData.base64EncodedData().base64EncodedString()))
-//
-//
-//        Singletons.setEncodedImage(encodedStrings: (imageData.base64EncodedData().base64EncodedString()))
-//
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let controller = storyboard.instantiateViewController(withIdentifier: "SomeOtherViewController")
-//
-//        self.present(controller, animated: true, completion: nil)
-//
-//        // Initialise an UIImage with our image data
-//        let capturedImage = UIImage.init(data: imageData , scale: 1.0)
-//        if let image = capturedImage {
-//            // Save our captured image to photos album
-////            cap
-////            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-//        }
-//    }
-////    func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {}
 
 }
 
