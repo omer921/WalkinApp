@@ -19,12 +19,6 @@ class SomeOtherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         encodedImage = Singletons.getEncodedImage()
-    
-//        NSLog(encodedImage)
-//        let data = Data(base64Encoded: encodedImage)
-//        let imageData = NSData(base64Encoded: encodedImage, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
-//        let image = UIImage(data: imageData as! Data)
-//        println(image)
         
         do {
             let dataDecoded : Data = Data(base64Encoded: encodedImage, options: .ignoreUnknownCharacters)!
