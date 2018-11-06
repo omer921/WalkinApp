@@ -12,6 +12,10 @@
 		2A3FE21C218DFD3400EA74F9 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */; };
 		2A3FE21E218E007600EA74F9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21D218E007600EA74F9 /* ImageTableViewCell.swift */; };
 		2A3FE220218E04B000EA74F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21F218E04B000EA74F9 /* LoginViewController.swift */; };
+		2A4C4E5121912B16000BAA74 /* jeans.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E4F21912B16000BAA74 /* jeans.png */; };
+		2A4C4E5221912B16000BAA74 /* jeans-jacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E5021912B16000BAA74 /* jeans-jacket.png */; };
+		2A4C4E5521912B24000BAA74 /* yeezy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E5321912B23000BAA74 /* yeezy1.png */; };
+		2A4C4E5621912B24000BAA74 /* yeezy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E5421912B23000BAA74 /* yeezy2.png */; };
 		65C0E0461EF3B68E00FBA1B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0E0451EF3B68E00FBA1B3 /* AppDelegate.swift */; };
 		65C0E0481EF3B68E00FBA1B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0E0471EF3B68E00FBA1B3 /* ViewController.swift */; };
 		65C0E04B1EF3B68E00FBA1B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C0E0491EF3B68E00FBA1B3 /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		2A3FE21D218E007600EA74F9 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		2A3FE21F218E04B000EA74F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2A4C4E4F21912B16000BAA74 /* jeans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans.png; sourceTree = "<group>"; };
+		2A4C4E5021912B16000BAA74 /* jeans-jacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jeans-jacket.png"; sourceTree = "<group>"; };
+		2A4C4E5321912B23000BAA74 /* yeezy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yeezy1.png; sourceTree = "<group>"; };
+		2A4C4E5421912B23000BAA74 /* yeezy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yeezy2.png; sourceTree = "<group>"; };
 		65C0E0421EF3B68E00FBA1B3 /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C0E0451EF3B68E00FBA1B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65C0E0471EF3B68E00FBA1B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 		65C0E0441EF3B68E00FBA1B3 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				2A4C4E5321912B23000BAA74 /* yeezy1.png */,
+				2A4C4E5421912B23000BAA74 /* yeezy2.png */,
+				2A4C4E5021912B16000BAA74 /* jeans-jacket.png */,
+				2A4C4E4F21912B16000BAA74 /* jeans.png */,
 				65C0E0451EF3B68E00FBA1B3 /* AppDelegate.swift */,
 				2A3FE217218C9C2400EA74F9 /* SomeOtherViewController.swift */,
 				2A3FE21F218E04B000EA74F9 /* LoginViewController.swift */,
@@ -254,8 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C0E0501EF3B68E00FBA1B3 /* LaunchScreen.storyboard in Resources */,
+				2A4C4E5121912B16000BAA74 /* jeans.png in Resources */,
 				65C0E04D1EF3B68E00FBA1B3 /* Assets.xcassets in Resources */,
 				65C0E04B1EF3B68E00FBA1B3 /* Main.storyboard in Resources */,
+				2A4C4E5521912B24000BAA74 /* yeezy1.png in Resources */,
+				2A4C4E5221912B16000BAA74 /* jeans-jacket.png in Resources */,
+				2A4C4E5621912B24000BAA74 /* yeezy2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

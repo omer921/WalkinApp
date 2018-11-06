@@ -22,24 +22,66 @@ class ClosetViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let array = Singletons.getLocalImages()
-        return array.count
+        return (array.count + 4)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let array = Singletons.getLocalImages()
+        if (indexPath.row > 3) {
+            let array = Singletons.getLocalImages()
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
 
-        cell.imageTextLabel!.text = Singletons.getLocalImages()[indexPath.row].1
-        
-        let dataDecoded : Data = Data(base64Encoded: Singletons.getLocalImages()[indexPath.row].0, options: .ignoreUnknownCharacters)!
-        
-        let image = UIImage(data: dataDecoded)
-        
-        cell.pictureView.image = image
+            cell.imageTextLabel!.text = Singletons.getLocalImages()[indexPath.row-4].1
+            
+            let dataDecoded : Data = Data(base64Encoded: Singletons.getLocalImages()[indexPath.row-4].0, options: .ignoreUnknownCharacters)!
+            
+            let image = UIImage(data: dataDecoded)
+            
+            cell.pictureView.image = image
+            
+            return cell
+        } else {
+            switch(indexPath.row) {
+            case 0:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
+                
+                cell.imageTextLabel!.text = "#Yeezy #Black"
+                
+                let image = UIImage(named: "yeezy1.png") //UIImage(data: "yeezy1.png", scale: .normal)
+                
+                cell.pictureView.image = image
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
+                
+                cell.imageTextLabel!.text = "#Yeezy #White"
+                
+                let image = UIImage(named: "yeezy2.png")
+                
+                cell.pictureView.image = image
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
+                
+                cell.imageTextLabel!.text = "#Jeans #Jacket"
+                
+                let image = UIImage(named: "jeans-jacket.png")
+                
+                cell.pictureView.image = image
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ImageTableViewCell
+                
+                cell.imageTextLabel!.text = "#Jeans"
+                
+                let image = UIImage(named: "jeans.png")
+                
+                cell.pictureView.image = image
+                return cell
+            }
+        }
 
-        return cell
     }
     
 
