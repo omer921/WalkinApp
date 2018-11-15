@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2D4125219E27A2007843EA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D4124219E27A2007843EA /* SignUpViewController.swift */; };
 		2A3FE218218C9C2400EA74F9 /* SomeOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE217218C9C2400EA74F9 /* SomeOtherViewController.swift */; };
 		2A3FE21A218CA29100EA74F9 /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE219218CA29100EA74F9 /* Singletons.swift */; };
 		2A3FE21C218DFD3400EA74F9 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */; };
 		2A3FE21E218E007600EA74F9 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21D218E007600EA74F9 /* ImageTableViewCell.swift */; };
 		2A3FE220218E04B000EA74F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21F218E04B000EA74F9 /* LoginViewController.swift */; };
+		2A4104A9219E16E50082D594 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4104A8219E16E50082D594 /* LandingViewController.swift */; };
+		2A4104AB219E182E0082D594 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4104AA219E182E0082D594 /* CollectionViewController.swift */; };
+		2A4104AD219E187A0082D594 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4104AC219E187A0082D594 /* CollectionViewCell.swift */; };
+		2A4104B0219E1A7C0082D594 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4104AF219E1A7C0082D594 /* UPCarouselFlowLayout.swift */; };
 		2A4C4E5121912B16000BAA74 /* jeans.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E4F21912B16000BAA74 /* jeans.png */; };
 		2A4C4E5221912B16000BAA74 /* jeans-jacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E5021912B16000BAA74 /* jeans-jacket.png */; };
 		2A4C4E5521912B24000BAA74 /* yeezy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C4E5321912B23000BAA74 /* yeezy1.png */; };
@@ -43,11 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2D4124219E27A2007843EA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2A3FE217218C9C2400EA74F9 /* SomeOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeOtherViewController.swift; sourceTree = "<group>"; };
 		2A3FE219218CA29100EA74F9 /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
 		2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		2A3FE21D218E007600EA74F9 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		2A3FE21F218E04B000EA74F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2A4104A8219E16E50082D594 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		2A4104AA219E182E0082D594 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2A4104AC219E187A0082D594 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2A4104AE219E1A7C0082D594 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPCarouselFlowLayout.h; path = UPCarouselFlowLayout/UPCarouselFlowLayout.h; sourceTree = "<group>"; };
+		2A4104AF219E1A7C0082D594 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		2A4C4E4F21912B16000BAA74 /* jeans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans.png; sourceTree = "<group>"; };
 		2A4C4E5021912B16000BAA74 /* jeans-jacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jeans-jacket.png"; sourceTree = "<group>"; };
 		2A4C4E5321912B23000BAA74 /* yeezy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yeezy1.png; sourceTree = "<group>"; };
@@ -114,13 +125,19 @@
 		65C0E0441EF3B68E00FBA1B3 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				2A4104AE219E1A7C0082D594 /* UPCarouselFlowLayout.h */,
+				2A2D4124219E27A2007843EA /* SignUpViewController.swift */,
+				2A4104AF219E1A7C0082D594 /* UPCarouselFlowLayout.swift */,
 				2A4C4E5321912B23000BAA74 /* yeezy1.png */,
 				2A4C4E5421912B23000BAA74 /* yeezy2.png */,
 				2A4C4E5021912B16000BAA74 /* jeans-jacket.png */,
 				2A4C4E4F21912B16000BAA74 /* jeans.png */,
 				65C0E0451EF3B68E00FBA1B3 /* AppDelegate.swift */,
+				2A4104AA219E182E0082D594 /* CollectionViewController.swift */,
+				2A4104AC219E187A0082D594 /* CollectionViewCell.swift */,
 				2A3FE217218C9C2400EA74F9 /* SomeOtherViewController.swift */,
 				2A3FE21F218E04B000EA74F9 /* LoginViewController.swift */,
+				2A4104A8219E16E50082D594 /* LandingViewController.swift */,
 				2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */,
 				65C0E0471EF3B68E00FBA1B3 /* ViewController.swift */,
 				65C0E0491EF3B68E00FBA1B3 /* Main.storyboard */,
@@ -296,10 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4104AD219E187A0082D594 /* CollectionViewCell.swift in Sources */,
+				2A4104AB219E182E0082D594 /* CollectionViewController.swift in Sources */,
 				2A3FE220218E04B000EA74F9 /* LoginViewController.swift in Sources */,
 				65C0E0481EF3B68E00FBA1B3 /* ViewController.swift in Sources */,
+				2A4104A9219E16E50082D594 /* LandingViewController.swift in Sources */,
 				2A3FE21C218DFD3400EA74F9 /* ClosetViewController.swift in Sources */,
+				2A2D4125219E27A2007843EA /* SignUpViewController.swift in Sources */,
 				2A3FE21A218CA29100EA74F9 /* Singletons.swift in Sources */,
+				2A4104B0219E1A7C0082D594 /* UPCarouselFlowLayout.swift in Sources */,
 				2A3FE21E218E007600EA74F9 /* ImageTableViewCell.swift in Sources */,
 				2A3FE218218C9C2400EA74F9 /* SomeOtherViewController.swift in Sources */,
 				65C0E0461EF3B68E00FBA1B3 /* AppDelegate.swift in Sources */,
