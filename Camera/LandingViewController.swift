@@ -1,22 +1,18 @@
 //
-//  LoginViewController.swift
+//  LandingViewController.swift
 //  Camera
 //
-//  Created by Omer Winrauke on 11/3/18.
+//  Created by Omer Winrauke on 11/15/18.
 //  Copyright © 2018 Rizwan. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
     
