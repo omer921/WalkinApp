@@ -205,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bch-83-NAt">
-                                <rect key="frame" x="16" y="66" width="343" height="365"/>
+                                <rect key="frame" x="16" y="73" width="343" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q7T-h7-mii">
@@ -232,6 +232,19 @@
                                     <action selector="retakePhotoClicked" destination="mMa-0A-bsA" eventType="touchUpInside" id="TfV-D8-olK"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-wC-pBW">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="WAm-DM-tDi">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="yfV-3Y-803">
+                                            <connections>
+                                                <segue destination="lol-dC-hFt" kind="show" id="oBH-gd-vWR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -324,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgW-gX-78I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2409" y="36"/>
+            <point key="canvasLocation" x="-2050" y="37"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6Gi-yV-zQc">
@@ -413,10 +426,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XH3-ng-Yfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1239.2" y="747.78325123152717"/>
+            <point key="canvasLocation" x="-1218" y="780"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9sc-xI-M1P"/>
+        <segue reference="oBH-gd-vWR"/>
     </inferredMetricsTieBreakers>
 </document>
