@@ -54,6 +54,9 @@
 		2A2D41A2219F346E007843EA /* carousel1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D419F219F346D007843EA /* carousel1-1.png */; };
 		2A2D41A3219F346E007843EA /* carousel3-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D41A0219F346D007843EA /* carousel3-1.png */; };
 		2A2D41A4219F346E007843EA /* carousel2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D41A1219F346D007843EA /* carousel2-1.png */; };
+		2A2D41A6219F35CC007843EA /* dot1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D41A5219F35CC007843EA /* dot1-1.png */; };
+		2A2D41A8219F35D2007843EA /* dot2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D41A7219F35D2007843EA /* dot2-1.png */; };
+		2A2D41AA219F35D8007843EA /* dot3-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D41A9219F35D8007843EA /* dot3-1.png */; };
 		2A3FE218218C9C2400EA74F9 /* SomeOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE217218C9C2400EA74F9 /* SomeOtherViewController.swift */; };
 		2A3FE21A218CA29100EA74F9 /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE219218CA29100EA74F9 /* Singletons.swift */; };
 		2A3FE21C218DFD3400EA74F9 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */; };
@@ -142,6 +145,9 @@
 		2A2D419F219F346D007843EA /* carousel1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carousel1-1.png"; path = "../../../../../Downloads/CAROUSEL PICS/carousel1-1.png"; sourceTree = "<group>"; };
 		2A2D41A0219F346D007843EA /* carousel3-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carousel3-1.png"; path = "../../../../../Downloads/CAROUSEL PICS/carousel3-1.png"; sourceTree = "<group>"; };
 		2A2D41A1219F346D007843EA /* carousel2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carousel2-1.png"; path = "../../../../../Downloads/CAROUSEL PICS/carousel2-1.png"; sourceTree = "<group>"; };
+		2A2D41A5219F35CC007843EA /* dot1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot1-1.png"; sourceTree = "<group>"; };
+		2A2D41A7219F35D2007843EA /* dot2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot2-1.png"; sourceTree = "<group>"; };
+		2A2D41A9219F35D8007843EA /* dot3-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot3-1.png"; sourceTree = "<group>"; };
 		2A3FE217218C9C2400EA74F9 /* SomeOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeOtherViewController.swift; sourceTree = "<group>"; };
 		2A3FE219218CA29100EA74F9 /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
 		2A3FE21B218DFD3400EA74F9 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +253,9 @@
 				2A2D419F219F346D007843EA /* carousel1-1.png */,
 				2A2D41A1219F346D007843EA /* carousel2-1.png */,
 				2A2D41A0219F346D007843EA /* carousel3-1.png */,
+				2A2D41A5219F35CC007843EA /* dot1-1.png */,
+				2A2D41A7219F35D2007843EA /* dot2-1.png */,
+				2A2D41A9219F35D8007843EA /* dot3-1.png */,
 				65C0E0591EF3B68E00FBA1B3 /* CameraTests */,
 				2A2D4150219E75EB007843EA /* Categories.png */,
 				2A2D4172219F1A9B007843EA /* chiffon_1.png */,
@@ -434,11 +443,14 @@
 				2A2D415A219E75EC007843EA /* Categories.png in Resources */,
 				2A2D4177219F1A9B007843EA /* sweater_1.png in Resources */,
 				2A2D4163219E75EC007843EA /* buttons_smalls_accessories.png in Resources */,
+				2A2D41A8219F35D2007843EA /* dot2-1.png in Resources */,
+				2A2D41A6219F35CC007843EA /* dot1-1.png in Resources */,
 				65C0E04D1EF3B68E00FBA1B3 /* Assets.xcassets in Resources */,
 				2A2D4147219E70C1007843EA /* +.png in Resources */,
 				2A2D4178219F1A9B007843EA /* TOPS.png in Resources */,
 				65C0E04B1EF3B68E00FBA1B3 /* Main.storyboard in Resources */,
 				2A2D417D219F1A9B007843EA /* stussy_1.png in Resources */,
+				2A2D41AA219F35D8007843EA /* dot3-1.png in Resources */,
 				2A4C4E5521912B24000BAA74 /* yeezy1.png in Resources */,
 				2A2D41A4219F346E007843EA /* carousel2-1.png in Resources */,
 				2A2D4131219E6AFB007843EA /* button_sign up.png in Resources */,

@@ -13,7 +13,7 @@ private let reuseIdentifier = "cell"
 
 class CollectionViewController:  UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
-    
+    @IBOutlet var dotImages:UIImageView!
     @IBOutlet var collection:UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,10 +50,13 @@ class CollectionViewController:  UIViewController, UICollectionViewDataSource, U
         
         if (indexPath.row == 0) {
             cell.imageView!.image = UIImage(named:"carousel1-1.png")!
+            dotImages!.image = UIImage(named:"dot1-1.png")
         } else if (indexPath.row == 1) {
             cell.imageView!.image = UIImage(named:"carousel2-1.png")!
+            dotImages!.image = UIImage(named:"dot2-1.png")
         } else {
             cell.imageView!.image = UIImage(named:"carousel3-1.png")!
+            dotImages!.image = UIImage(named:"dot3-1.png")
         }
         
 

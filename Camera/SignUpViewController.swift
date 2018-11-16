@@ -30,8 +30,9 @@ class SignUpViewController: UIViewController {
             let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "closetViewController1")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
         }
-        alert.addAction(action)
         alert.addAction(action2)
+        alert.addAction(action)
+
         self.present(alert, animated: true, completion: nil)
         
     }
