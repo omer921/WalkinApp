@@ -41,7 +41,7 @@ class SomeOtherViewController: UIViewController {
     @IBAction func addPhotoClicked() {
         var encode = Singletons.getEncodedImage() //.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         NSLog(encode)
-        Singletons.addLocalImages(item: (encode), tag: hashtagTextField.text!)
+        Singletons.addLocalImages(item: (encode), tag: "")
         if (Singletons.getEncodedImage() == encode.removingPercentEncoding){
             NSLog("Success!")
         }

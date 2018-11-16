@@ -16,18 +16,13 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     
-//    @IBAction func viewDidAppear(_ animated: Bool) {
-//
-//    }
-//    
     @IBAction func signUpButtonClicked(_ sender: UIButton) {
         let alert = UIAlertController(title: "Enable Email Access", message: "Connect your shopping email so we can instantly upload and include your past purchases", preferredStyle: .alert)
-//        alert.butt
-        let action = UIAlertAction(title: "Sure!", style: .default) { (action) -> Void in
+      let action = UIAlertAction(title: "Sure!", style: .default) { (action) -> Void in
             let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "closetViewController")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
         }
@@ -59,6 +54,14 @@ class SignUpViewController: UIViewController {
             errorLabel.text = ""
         }
     }
+    
+//    func textFieldShouldReturn(textField: UITextField) -> Bool {
+//
+//        textField.resignFirstResponder()
+//        //or
+//        //self.view.endEditing(true)
+//        return true
+//    }
     /*
     // MARK: - Navigation
 
@@ -69,4 +72,17 @@ class SignUpViewController: UIViewController {
     }
     */
 
+}
+
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

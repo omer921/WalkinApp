@@ -17,14 +17,9 @@ class CollectionViewController:  UIViewController, UICollectionViewDataSource, U
     @IBOutlet var collection:UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
         self.collection.delegate = self
         self.collection.dataSource = self
-//        self.collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         let layout = UPCarouselFlowLayout()
         layout.itemSize = CGSize(width: 200, height: 200)
         layout.scrollDirection = .horizontal
@@ -51,7 +46,7 @@ class CollectionViewController:  UIViewController, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-        cell.imageTextLabel?.text = "hello world"
+        cell.imageTextLabel?.text = "hello world \(indexPath.row)"
 
         // Configure the cell
 
