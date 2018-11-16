@@ -9,5 +9,5 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-        @IBOutlet var imageTextLabel: UILabel?
+        @IBOutlet var imageView: UIImageView?
 }

@@ -30,16 +30,37 @@ class StyleMeViewController: UIViewController {
     }
     
     @IBAction func getNewSuggestionClicked(_ sender: UIButton) {
+        
         let number = Int.random(in: 0 ..< Singletons.tops.count)
         let otherNumber = Int.random(in: 0..<2)
         if (otherNumber == 0) {
-            topImage.image = Singletons.tops[number].0.image
+            UIView.transition(with: self.topImage,
+                              duration:0.5,
+                              options: .transitionCrossDissolve,
+                              animations: { self.topImage.image = Singletons.tops[number].0.image },
+                              completion: nil)
+            
+            
+//            topImage.image =
         } else {
-            topImage.image = Singletons.tops[number].1.image
+            UIView.transition(with: self.topImage,
+                              duration:0.5,
+                              options: .transitionCrossDissolve,
+                              animations: { self.topImage.image = Singletons.tops[number].1.image },
+                              completion: nil)
+            
         }
         
         let pantNumber = Int.random(in: 0 ..< Singletons.bottoms.count)
-        bottomImage.image = Singletons.bottoms[pantNumber].image
+//        bottomImage.image = Singletons.bottoms[pantNumber].image
+        UIView.transition(with: self.bottomImage,
+                          duration:0.5,
+                          options: .transitionCrossDissolve,
+                          animations: { self.bottomImage.image = Singletons.bottoms[pantNumber].image },
+                          completion: nil)
+        
+        
+        
     }
     
     /*

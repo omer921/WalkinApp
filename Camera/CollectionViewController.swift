@@ -21,8 +21,9 @@ class CollectionViewController:  UIViewController, UICollectionViewDataSource, U
         self.collection.delegate = self
         self.collection.dataSource = self
         let layout = UPCarouselFlowLayout()
-        layout.itemSize = CGSize(width: 200, height: 200)
+        layout.itemSize = CGSize(width: 375, height: 500)
         layout.scrollDirection = .horizontal
+//        layo
         self.collection.collectionViewLayout = layout
 
         // Do any additional setup after loading the view.
@@ -46,7 +47,16 @@ class CollectionViewController:  UIViewController, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-        cell.imageTextLabel?.text = "hello world \(indexPath.row)"
+        
+        if (indexPath.row == 0) {
+            cell.imageView!.image = UIImage(named:"carousel1-1.png")!
+        } else if (indexPath.row == 1) {
+            cell.imageView!.image = UIImage(named:"carousel2-1.png")!
+        } else {
+            cell.imageView!.image = UIImage(named:"carousel3-1.png")!
+        }
+        
+
 
         // Configure the cell
 

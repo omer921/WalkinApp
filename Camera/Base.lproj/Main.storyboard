@@ -24,6 +24,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hN-jY-Dgq">
+                                <rect key="frame" x="85" y="656" width="204" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_login2.png"/>
+                                <connections>
+                                    <segue destination="DSk-Su-WcC" kind="show" id="Ebt-9H-6G8"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="741423ow" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lw0-jd-vMi">
                                 <rect key="frame" x="27" y="503" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,12 +46,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hN-jY-Dgq">
-                                <rect key="frame" x="85" y="656" width="204" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUL-wh-FbR">
+                                <rect key="frame" x="85" y="711" width="204" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_login.png"/>
+                                <state key="normal" image="button_signup.png"/>
                                 <connections>
-                                    <segue destination="DSk-Su-WcC" kind="show" id="Ebt-9H-6G8"/>
+                                    <segue destination="Sku-1f-SfX" kind="show" id="VtH-0V-Wbe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,6 +81,9 @@
                                     <navigationItem id="lIr-tF-6Yx">
                                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="rhu-kD-MTq">
                                             <color key="tintColor" red="0.51879918575286865" green="0.12959620356559753" blue="0.95691806077957153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="DSk-Su-WcC" kind="show" id="Lc3-qy-BBK"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="+.png" id="3Ts-ra-5mJ">
                                             <color key="tintColor" red="0.51879918575286865" green="0.12959620356559753" blue="0.95691806077957153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -127,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="-399" y="800"/>
         </scene>
-        <!--View Controller-->
+        <!--Closet1 View Controller-->
         <scene sceneID="snO-UT-Dcc">
             <objects>
-                <viewController id="DSk-Su-WcC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="closetViewController1" id="DSk-Su-WcC" customClass="Closet1ViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I6r-QX-Io5"/>
                         <viewControllerLayoutGuide type="bottom" id="8jM-cN-bV3"/>
@@ -451,11 +462,11 @@ Currently: 44</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ygE-ZU-8uy">
-                                <rect key="frame" x="0.0" y="195" width="375" height="341"/>
+                                <rect key="frame" x="0.0" y="38" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="idc-n6-CaQ" customClass="UPCarouselFlowLayout" customModule="Camera">
-                                    <size key="itemSize" width="170" height="127"/>
+                                    <size key="itemSize" width="407" height="466"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -470,42 +481,37 @@ Currently: 44</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="rxz-ku-BvS" customClass="CollectionViewCell" customModule="Camera" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="127"/>
+                                        <rect key="frame" x="0.0" y="76" width="407" height="466"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="127"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="407" height="466"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxL-jV-P2B">
-                                                    <rect key="frame" x="6" y="49" width="144" height="29"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phc-md-kxu">
+                                                    <rect key="frame" x="0.0" y="37" width="373" height="429"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </imageView>
                                             </subviews>
                                         </view>
+                                        <size key="customSize" width="407" height="466"/>
                                         <connections>
-                                            <outlet property="imageTextLabel" destination="kxL-jV-P2B" id="Tnd-Zd-1ex"/>
+                                            <outlet property="imageView" destination="phc-md-kxu" id="qsE-0X-ZTA"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vp-pO-Q77">
-                                <rect key="frame" x="102" y="544" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whJ-o9-ADH">
+                                <rect key="frame" x="76" y="729" width="222" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="YPE-I5-KQG" kind="show" id="02h-DW-ywB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whJ-o9-ADH">
-                                <rect key="frame" x="246" y="544" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Sign Up" image="button_signup.png"/>
                                 <connections>
                                     <segue destination="Sku-1f-SfX" kind="show" id="zQs-1n-Vul"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vp-pO-Q77">
+                                <rect key="frame" x="76" y="678" width="222" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login" image="button_login.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -597,8 +603,10 @@ Currently: 44</string>
         <image name="Categories.png" width="174" height="38"/>
         <image name="TOPS.png" width="112" height="34"/>
         <image name="Weather.png" width="136" height="30"/>
-        <image name="button_login.png" width="204" height="40"/>
+        <image name="button_login.png" width="408" height="80"/>
+        <image name="button_login2.png" width="204" height="40"/>
         <image name="button_sign up.png" width="408" height="82"/>
+        <image name="button_signup.png" width="408" height="80"/>
         <image name="button_style me.png" width="408" height="80"/>
         <image name="button_tops.png" width="316" height="320"/>
         <image name="buttons_accessories.png" width="316" height="320"/>
@@ -620,7 +628,9 @@ Currently: 44</string>
         <image name="screen_login-1.png" width="1042" height="1853"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ib1-TU-RrE"/>
+        <segue reference="zQs-1n-Vul"/>
         <segue reference="jW8-9a-xIV"/>
-        <segue reference="bqZ-GO-f4j"/>
+        <segue reference="Lc3-qy-BBK"/>
     </inferredMetricsTieBreakers>
 </document>

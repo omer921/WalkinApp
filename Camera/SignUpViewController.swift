@@ -23,11 +23,11 @@ class SignUpViewController: UIViewController {
     @IBAction func signUpButtonClicked(_ sender: UIButton) {
         let alert = UIAlertController(title: "Enable Email Access", message: "Connect your shopping email so we can instantly upload and include your past purchases", preferredStyle: .alert)
       let action = UIAlertAction(title: "Sure!", style: .default) { (action) -> Void in
-            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "closetViewController")
+            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "closetViewController1")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
         }
         let action2 = UIAlertAction(title: "Not Now", style: .default) { (action) -> Void in
-            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "closetViewController")
+            let viewControllerYouWantToPresent = self.storyboard?.instantiateViewController(withIdentifier: "closetViewController1")
             self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
         }
         alert.addAction(action)
