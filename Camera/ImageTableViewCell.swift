@@ -11,6 +11,7 @@ import UIKit
 class ImageTableViewCell: UITableViewCell {
     @IBOutlet var imageTextLabel: UILabel?
     @IBOutlet var pictureView: UIImageView!
+    @IBOutlet var pictureView2: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

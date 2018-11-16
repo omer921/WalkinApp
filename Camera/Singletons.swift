@@ -13,7 +13,8 @@ class Singletons: NSObject {
     private static var encodedImage = String()
     private static var jsonObject:NSDictionary? = nil
     private static var encodedImages = Array<(String, String)>()
-    
+    static var tops = Array<(ClothingObject, ClothingObject)>()
+    static var bottoms = Array<ClothingObject>()
     static func setEncodedImage(encodedStrings: String) {
         encodedImage = encodedStrings
     }
@@ -63,5 +64,36 @@ class Singletons: NSObject {
     
     static func getLocalImages() -> Array<(String, String)> {
         return encodedImages
+    }
+    
+    static func loadTops() -> Array<(ClothingObject, ClothingObject)> {
+        if tops.count == 0 {
+            var listOfNames = ["blouse_1.png", "chiffon_1.png", "cowl_1.png", "gray_1.png", "green_1.png", "maroon_1.png", "stussy_1.png", "sweater_1.png"]
+            for i in 0...(listOfNames.count/2) {
+                print("here", listOfNames[i])
+                let object = ClothingObject(image: UIImage(named: listOfNames[i])! , weatherTag: "Cold", clothingTag: "Top")
+//                let object2 = ClothingObject(image: UIImage(named: listOfNames[i*2])! , weatherTag: "Cold", clothingTag: "Top")
+                
+                tops.append((object, object))
+            }
+            var count = 0
+            for i in (listOfNames.count/2)...(listOfNames.count-1) {
+                print((listOfNames.count/2), (listOfNames.count-1))
+                let object = ClothingObject(image: UIImage(named: listOfNames[i])! , weatherTag: "Cold", clothingTag: "Top")
+                tops[count].1 = object
+                count += 1
+            }
+        }
+        return tops
+    }
+    
+    static func loadBottoms() {
+        if bottoms.count == 0 {
+            var listOfNames = ["jeans_1.png", "pants.jpg"]
+            for item in listOfNames {
+                let object = ClothingObject(image: UIImage(named: item)! , weatherTag: "Cold", clothingTag: "Bottom")
+                bottoms.append(object)
+            }
+        }
     }
 }

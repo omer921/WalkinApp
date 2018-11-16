@@ -42,27 +42,30 @@ class SomeOtherViewController: UIViewController {
         var encode = Singletons.getEncodedImage() //.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         NSLog(encode)
         Singletons.addLocalImages(item: (encode), tag: "")
+        var piece = ClothingObject(image: imageView.image!, weatherTag: "something", clothingTag: "")
+        
+        Singletons.tops.append((Singletons.tops[0].0, piece))
         if (Singletons.getEncodedImage() == encode.removingPercentEncoding){
             NSLog("Success!")
         }
-        
-        let urlString = "http://walkin.us-west-2.elasticbeanstalk.com/add/omer/"
-//        let urlString = "http://192.168.1.242:8081/add/omer/"
-        let url = URL(string: urlString)
-        var request = URLRequest(url: url!)
-        request.setValue("application/json", forHTTPHeaderField:"Content-Type")
-        request.httpMethod = "POST"
-        let postString = "{\"fid\":\"\(encode)\"}"
-        request.httpBody = postString.data(using: .utf8)
-
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-        if error != nil {
-            NSLog(error!.localizedDescription)
-        }
-        guard data != nil else { return }
-        NSLog("executing call")
-        }.resume()
-        Singletons.loadCloset()
+//
+//        let urlString = "http://walkin.us-west-2.elasticbeanstalk.com/add/omer/"
+////        let urlString = "http://192.168.1.242:8081/add/omer/"
+//        let url = URL(string: urlString)
+//        var request = URLRequest(url: url!)
+//        request.setValue("application/json", forHTTPHeaderField:"Content-Type")
+//        request.httpMethod = "POST"
+//        let postString = "{\"fid\":\"\(encode)\"}"
+//        request.httpBody = postString.data(using: .utf8)
+//
+//        URLSession.shared.dataTask(with: request) { (data, response, error) in
+//        if error != nil {
+//            NSLog(error!.localizedDescription)
+//        }
+//        guard data != nil else { return }
+//        NSLog("executing call")
+//        }.resume()
+//        Singletons.loadCloset()
     }
 
     /*
